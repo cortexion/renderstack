@@ -1,3 +1,7 @@
+node server.ts - start server with build frontend
+npm run build - build frontend for server
+npm run dev - start frontend development server
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
