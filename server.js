@@ -33,7 +33,7 @@ db.sequelize.sync({force: true}).then(() => {
 });
 
 app.get("/get", (req, res) => {
-    res.json({ message: "Welcome to the application." });
+    res.json({ message: "Welcome to the application!" });
 });
 
 // Catch-all route, serves the index.html for any other GET request
