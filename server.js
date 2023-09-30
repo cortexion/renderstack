@@ -6,7 +6,7 @@ const cors = require('cors');
 dotenv.config();
 
 var corsOptions = {
-  origin: "https://renderstack.onrender.com/"//http://localhost:3001"
+  origin: process.env.HOST//http://localhost:3001"
 };
 
 const app = express();
@@ -27,13 +27,13 @@ const Role = db.role;
 
 // db.sequelize.sync();
 // force: true will drop the table if it already exists
-db.sequelize.sync({force: true}).then(() => {
+//db.sequelize.sync({force: true}).then(() => {
   //console.log('Drop and Resync Database with { force: true }');
   //initial();
-});
+//});
 
 app.get("/get", (req, res) => {
-    res.json({ message: "Welcome to the application!" });
+    res.json({ message: "Welcome to the application..." });
 });
 
 // Catch-all route, serves the index.html for any other GET request
